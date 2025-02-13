@@ -33,7 +33,7 @@ public class ResponseError {
         return responseError;
     }
 
-    public String getMessage() {
+   /* public String getMessage() {
         return message;
     }
 
@@ -47,7 +47,7 @@ public class ResponseError {
 
     public void setErrors(Collection<FieldError> errors) {
         this.errors = errors;
-    }
+    }*/
 
     public Response withStatusCode(int code){
         return  Response.status(code).entity(this).build();

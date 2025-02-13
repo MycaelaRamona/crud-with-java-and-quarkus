@@ -1,11 +1,11 @@
 package io.github.mycaelaramona.quarkussocial.domain.model;
 
 import jakarta.persistence.*;
-
-import java.util.Objects;
+import lombok.Data;
 
 @Entity
 @Table(name = "users")
+@Data
 public class User {
 
     @Id
@@ -17,6 +17,8 @@ public class User {
 
     @Column(name = "age")
     private Integer age;
+
+    /* Retirado para usar a annotation @Data.
 
     public Long getId() {
         return id;
@@ -53,6 +55,6 @@ public class User {
     @Override
     public int hashCode() {
         return Objects.hash(id, name, age);
-    }
+    }*/
 
 }
