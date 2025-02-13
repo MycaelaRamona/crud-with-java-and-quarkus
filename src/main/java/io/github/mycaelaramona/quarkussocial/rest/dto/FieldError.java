@@ -1,9 +1,14 @@
 package io.github.mycaelaramona.quarkussocial.rest.dto;
 
-public class Fiielderror {
+public class FieldError {
 
     private String field;
     private String message;
+
+    public FieldError(String field, String message) {
+        this.field = field;
+        this.message = message;
+    }
 
     public String getField() {
         return field;
